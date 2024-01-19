@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+/*------------------------------ CSS Reset & Variables ------------------------------*/
+:root {
+    --clr-main: #0EB1D2;
+    --clr-main-dark: #19191f;
+    --clr-white: #f5f5f5;
+    --transition: all 0.3s linear;
+    --ff-tektur: 'Tektur', sans-serif;
+}
+
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*------------------------------ Header ------------------------------*/
+
+.navBarContainer {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: var(--clr-main);
+    font-family: var(--ff-tektur);
+}
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.navBar h3 {
+    border-bottom: 2px solid var(--clr-main);
+}
+
+.navBar h3:hover {
+    color: var(--clr-white);
+    border-bottom: 2px solid var(--clr-white);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.langContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.icon {
+    font-size: 1.5rem;
+}
+
+/*------------------------------ Title ------------------------------*/
+
+.introContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--clr-main-dark);
+}
+
+.intro {
+    padding: 7rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    color: var(--clr-white);
+    border: 6px solid var(--clr-main);
+    border-radius: 1rem;
+}
+
+.introInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--clr-main);
+    border-radius: 2px;
+    height: 35px;
+    width: 450px;
+    font-size: 2rem;
+}
+
+.imgIntro {
+    height: 450px;
+}
+
+/*------------------------------ Intro ------------------------------*/
+ 
+.infoContainer {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--clr-main-dark);
+}
+
+.infoDesc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 600px;
+    gap: 2rem;
+    color: var(--clr-white);
+}
+
+
+/*------------------------------ Herramientas ------------------------------*/
+
+.toolsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    height: 100vh;
+    background-color: var(--clr-main-dark);
+}
+
+.toolsTitle {
+    color: var(--clr-white);
+}
+
+.toolContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tools {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    color: var(--clr-white);
+}
+
+.tool {
+    font-size: 8rem;
+}
+
+
+/*------------------------------ Herramientas ------------------------------*/
+
+.projectsContainer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    background-color: var(--clr-main-dark);
+}
+
+.projectTitle {
+    color: var(--clr-white);
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.project {
+    border-radius: 10px;
+    box-shadow: -5px 5px 8px -1px rgba(209, 203, 203, 0.31);
+    height: 250px;
+    overflow: hidden;
+    width: 400px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.one {
+    background-image: url('./img/Screenshot\ 2024-01-18\ 121134.png 2024-01-18\ 121134.png');
+}
+
+.two {
+    background-image: url('./img/Screenshot\ 2024-01-18\ 121104.png 2024-01-18\ 121104.png');
+}
+
+.three {
+    background-image: url('./img/Screenshot\ 2024-01-18\ 121328.png 2024-01-18\ 121328.png');
+}
+
+
+
+/*------------------------------ Contacto ------------------------------*/
+
+.contactContainer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    background-color: var(--clr-main-dark);
+    color: var(--clr-white);
+}
+
+/*------------------------------ Footer ------------------------------*/
+
+
+.footerContainer {
+    padding: 1rem;
+    background-color: var(--clr-main);
+}
+
+.footerContainer p {
+    color: #f1ecea;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin: 0;
+    text-align: center;
+}
